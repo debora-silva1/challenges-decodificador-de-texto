@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    background-color: #F3F5FC;
+
+}
+
+.imagem__cabecalho {
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    top: 40px;
+    left: 40px;
+    gap: 40px;
+}
+
+.decodificador__digitar__texto {
+    position: absolute;
+    width: 680px;
+    height: 48px;
+    top: 168px;
+    left: 240px;
+
+
+}
+
+.decodificador__input {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    color: #0A3871;
+    background-color: #F3F5FC;
+    border-width: 0;
+
+}
+
+.decodificador__input::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: #0A3871;
+    background-color: #F3F5FC;
+
+}
+
+.decodificador__caixa__texto__descriptografada {
+    position: relative;
+    background-color: white;
+    width: 400px;
+    height: 944px;
+    top: 40px;
+    left: 1000px;
+    border-radius: 32px;
+
+}
+
+.decodificador__texto__texto {
+    width: 336px;
+    height: 122px;
+    top: 619px;
+    left: 32px;
+    gap: 16px;
+    position: absolute;
+
+}
+
+.decodificador__texto {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.8px;
+    text-align: center;
+    width: 336px;
+    height: 58px;
+}
+
+.decodificador__paragrafo {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    width: 336px;
+    height: 58px;
+}
+
+.imagem {
+    width: 336px;
+    height: 304px;
+    border-top: 283px;
+    border-left: 1032px;
+    position: absolute;
+    left: 32px;
+    top: 243px;
+}
+
+.decodificador__observacao {
+    position: absolute;
+    width: 252px;
+    height: 18px;
+    top: 851px;
+    left: 240px;
+    gap: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.decodificador__observacao__imagem {
+    width: 16px;
+    height: 16px;
+}
+
+.decodificador__observacao__paragrafo {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    width: 228px;
+    height: 18px;
+    opacity: 80%;
+    color: #495057;
+
+
+}
+
+.decodificador__botao {
+    width: 680px;
+    height: 67px;
+    position: absolute;
+    top: 885px;
+    left: 240px;
+    gap: 24px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.botao {
+    color: darkblue;
+    background-color: #d8dfe8;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    size: 16px;
+    line-height: 19.36px;
+    text-align: center;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    border: 1px;
+    padding: 24px;
+    gap: 8px;
+}
