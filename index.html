@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador de Texto</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="./decodificador.js"></script>
 </head>
 
 <body>
@@ -15,7 +16,8 @@
     </header>
     <main>
         <div class="decodificador__digitar__texto">
-            <input class="decodificador__input" type="text" name="okok" id="" placeholder="Digite seu texto">
+            <textarea class="decodificador__input" rows="20" cols="40" maxlength="1000"
+                placeholder="Digite seu texto"></textarea>
         </div>
         <div class="decodificador__caixa__texto__descriptografada">
             <img class="imagem" src="./imagem/imagem.svg" alt="imagem de um boneco com lupa">
@@ -31,8 +33,8 @@
             <p class="decodificador__observacao__paragrafo">Apenas letras minúsculas e sem acento.</p>
         </div>
         <div class="decodificador__botao">
-            <button class="botao">Criptografar</button>
-            <button class="botao">Descriptografar</button>
+            <button class="botao" id="botao-criptografar">Criptografar</button>
+            <button class="botao" id="botao-descriptografar">Descriptografar</button>
         </div>
     </main>
     <footer></footer>

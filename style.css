@@ -46,7 +46,7 @@ body {
 
 .decodificador__caixa__texto__descriptografada {
     position: relative;
-    background-color: white;
+    background-color: rgb(141, 163, 191);
     width: 400px;
     height: 944px;
     top: 40px;
@@ -152,4 +152,9 @@ body {
     border: 1px;
     padding: 24px;
     gap: 8px;
+}
+
+.botao:hover {
+    background-color: #0A3871;
+    color: #d8dfe8;
 }
