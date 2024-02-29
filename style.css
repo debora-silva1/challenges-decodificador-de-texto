@@ -24,7 +24,11 @@ body {
 
 }
 
-.decodificador__input {
+.hide_div {
+    display: none;
+}
+
+textarea {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 32px;
@@ -35,7 +39,7 @@ body {
 
 }
 
-.decodificador__input::placeholder {
+textarea::placeholder {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 32px;

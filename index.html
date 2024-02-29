@@ -15,27 +15,31 @@
         <img class="imagem__cabecalho" src="./imagem/Frame6.png" alt="icone da letra A">
     </header>
     <main>
-        <div class="decodificador__digitar__texto">
-            <textarea class="decodificador__input" rows="20" cols="40" maxlength="1000"
+        <section class="decodificador__digitar__texto">
+            <textarea id="decodificador__input" rows="20" cols="40" maxlength="1000 "
                 placeholder="Digite seu texto"></textarea>
-        </div>
-        <div class="decodificador__caixa__texto__descriptografada">
-            <img class="imagem" src="./imagem/imagem.svg" alt="imagem de um boneco com lupa">
-            <div class="decodificador__texto__texto">
-                <h2 class="decodificador__texto">Nenhuma mensagem encontrada</h2>
-                <p class="decodificador__paragrafo"> Digite um texto que você deseja criptrografar ou descriptografar.
-                </p>
+        </section>
+        <section class="decodificador__caixa__texto__descriptografada">
+            <div class="show_div">
+                <img class="imagem" src="./imagem/imagem.svg" alt="imagem de um boneco com lupa">
+                <div class="decodificador__texto__texto">
+                    <h2 class="decodificador__texto">Nenhuma mensagem encontrada</h2>
+                </div>
             </div>
-        </div>
-        <div class="decodificador__observacao">
+            <div class="hide_div">
+                <textarea class="decodificador__paragrafo" readonly> Digite um texto que você deseja criptrografar ou descriptografar.
+                </textarea>
+            </div>
+        </section>
+        <section class="decodificador__observacao">
             <img class="decodificador__observacao__imagem" src="./imagem/bi_exclamation-circle-fill.png"
                 alt="foto de um caracter exclamacao">
             <p class="decodificador__observacao__paragrafo">Apenas letras minúsculas e sem acento.</p>
-        </div>
-        <div class="decodificador__botao">
-            <button class="botao" id="botao-criptografar">Criptografar</button>
-            <button class="botao" id="botao-descriptografar">Descriptografar</button>
-        </div>
+        </section>
+        <section class="decodificador__botao">
+            <button class="botao" id="botao-criptografar" onclick="onClickEncriptBtn()">Criptografar</button>
+            <button class="botao" id="botao-descriptografar" onclick="onClickDescriptBtn()">Descriptografar</button>
+        </section>
     </main>
     <footer></footer>
 </body>
