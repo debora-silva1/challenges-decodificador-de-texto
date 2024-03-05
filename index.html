@@ -16,7 +16,7 @@
     </header>
     <main>
         <section class="decodificador__digitar__texto">
-            <textarea id="decodificador__input" rows="20" cols="40" maxlength="1000 "
+            <textarea id="decodificador__input" rows="30" cols="10" maxlength="1000 "
                 placeholder="Digite seu texto"></textarea>
         </section>
         <section class="decodificador__caixa__texto__descriptografada">
@@ -30,6 +30,9 @@
                 <textarea class="decodificador__paragrafo" readonly> Digite um texto que você deseja criptrografar ou descriptografar.
                 </textarea>
             </div>
+            <div class="decodificador__botao__copiar">
+                <button class="botao__copiar" id="botao-copiar" onclick="onClickCopiarBnt()">Copiar</button>
+            </div>
         </section>
         <section class="decodificador__observacao">
             <img class="decodificador__observacao__imagem" src="./imagem/bi_exclamation-circle-fill.png"
@@ -41,7 +44,6 @@
             <button class="botao" id="botao-descriptografar" onclick="onClickDescriptBtn()">Descriptografar</button>
         </section>
     </main>
-    <footer></footer>
 </body>
 
 </html>
