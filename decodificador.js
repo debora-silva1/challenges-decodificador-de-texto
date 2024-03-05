@@ -29,9 +29,6 @@ function onClickEncriptBtn() {
         const divShow = document.getElementsByClassName("show_div")[0];
         const textArea = document.getElementsByClassName("decodificador__paragrafo")[0];
 
-        console.log(divHide);
-        console.log(divShow);
-
         divHide.style.display = "block";
         divShow.style.display = "none";
 
@@ -48,9 +45,6 @@ function onClickDescriptBtn() {
         const divShow = document.getElementsByClassName("show_div")[0];
         const textArea = document.getElementsByClassName("decodificador__paragrafo")[0];
 
-        console.log(divHide);
-        console.log(divShow);
-
         divHide.style.display = "block";
         divShow.style.display = "none";
 
@@ -59,3 +53,9 @@ function onClickDescriptBtn() {
     }
 
 }
+function onClickCopiarBtn() {
+    let textoCopiado = document.getElementById("decodificador-paragrafo");
+    console.log(textoCopiado.value)
+
+}
+

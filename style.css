@@ -31,7 +31,7 @@ body {
 }
 
 .hide_div {
-    display: none;
+    /* display: none */
 }
 
 textarea {
@@ -64,6 +64,8 @@ textarea::placeholder {
     top: 40px;
     left: 1000px;
     border-radius: 32px;
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -174,6 +176,18 @@ textarea::placeholder {
     color: #d8dfe8;
 }
 
+.botao__copiar:hover {
+    background-color: #0A3871;
+    color: #d8dfe8;
+}
+
+.decodificador__botao__copiar {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 845px;
+
+}
 
 .botao__copiar {
     width: 336px;
@@ -190,6 +204,6 @@ textarea::placeholder {
     line-height: 19.36px;
     text-align: center;
     color: #0A3871;
-    justify-content: center;
+
 
 }
