@@ -24,13 +24,14 @@ function descriptografar(textoDescriptografar) {
 function onClickEncriptBtn() {
     const textoCriptografar = document.getElementById("decodificador__input")
 
-    if (textoCriptografar.value !== '') {
-        const divHide = document.getElementsByClassName("hide_div")[0];
-        const divShow = document.getElementsByClassName("show_div")[0];
-        const textArea = document.getElementsByClassName("decodificador__paragrafo")[0];
 
-        divHide.style.display = "block";
-        divShow.style.display = "none";
+    if (textoCriptografar.value !== '') {
+        const divHide = document.getElementsByClassName("show__div")[0];
+        console.log(divHide)
+        const botaoClicadoCriptografar = document.getElementById("botao-copiar")
+
+        divHide.style.display = "none";
+        botaoClicadoCriptografar.style.display = "block";
 
         const ret = criptografar(textoCriptografar.value);
         textArea.value = ret;
@@ -42,11 +43,8 @@ function onClickDescriptBtn() {
 
     if (textoCriptografar.value !== '') {
         const divHide = document.getElementsByClassName("hide_div")[0];
-        const divShow = document.getElementsByClassName("show_div")[0];
-        const textArea = document.getElementsByClassName("decodificador__paragrafo")[0];
 
-        divHide.style.display = "block";
-        divShow.style.display = "none";
+        divHide.style.display = "none";
 
         const ret = descriptografar(textoCriptografar.value);
         textArea.value = ret;
@@ -54,8 +52,8 @@ function onClickDescriptBtn() {
 
 }
 function onClickCopiarBtn() {
-    let textoCopiado = document.getElementById("decodificador-paragrafo");
-    console.log(textoCopiado.value)
+    const botaoClicadoCriptografar = document.querySelector("botao-criptografar")
+    console.log(botaoClicadoCriptografar)
 
 }
 

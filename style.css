@@ -79,7 +79,14 @@ textarea::placeholder {
 
 }
 
-.decodificador__texto {
+.show__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.decodificador__mensagem {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 24px;
@@ -87,9 +94,11 @@ textarea::placeholder {
     text-align: center;
     width: 336px;
     height: 58px;
+    padding-bottom: 20px;
+
 }
 
-.decodificador__paragrafo {
+.decodificador__mensagem__mensagem {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -98,18 +107,13 @@ textarea::placeholder {
     width: 336px;
     height: 58px;
     background-color: rgb(141, 163, 191);
-    ;
 
 }
 
 .imagem {
     width: 336px;
     height: 304px;
-    border-top: 283px;
-    border-left: 1032px;
-    position: absolute;
-    left: 32px;
-    top: 243px;
+    margin-bottom: 30px;
 }
 
 .decodificador__observacao {
@@ -190,6 +194,7 @@ textarea::placeholder {
 }
 
 .botao__copiar {
+    display: none;
     width: 336px;
     height: 67px;
     top: 885px;
@@ -206,4 +211,43 @@ textarea::placeholder {
     color: #0A3871;
 
 
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* .decodificador__digitar__texto {
+        width: 100%;
+        left: 20px;
+    } */
+    .decodificador__texto .decodificador__paragrafo {
+        display: none;
+    }
+
+    .decodificador__caixa__texto__descriptografada {
+        width: 688px;
+        left: 20px;
+        top: 1001px;
+        display: flex;
+        position: relative;
+        left: 40px;
+        height: 343px;
+        background-color: white;
+
+    }
+
+    .imagem {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    textarea {
+        width: 100%;
+        height: 300px;
+    }
 }
