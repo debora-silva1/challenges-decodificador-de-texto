@@ -2,17 +2,17 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Decodificador de Texto</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="./decodificador.js"></script>
 </head>
 
 <body>
     <header>
-        <img class="imagem__cabecalho" src="./imagem/Frame6.png" alt="icone da letra A">
+        <img class="imagem__cabecalho" src="./imagem/Frame6.png" alt="icone da letra A" />
     </header>
     <main>
         <section class="decodificador__digitar__texto">
@@ -21,23 +21,35 @@
         </section>
         <section class="decodificador__caixa__texto__descriptografada">
             <div class="show__div">
-                <img class="imagem" src="./imagem/imagem.svg" alt="imagem de um boneco com lupa">
+                <img class="imagem" src="./imagem/imagem.svg" alt="imagem de um boneco com lupa" />
                 <h2 class="decodificador__mensagem">Nenhuma mensagem encontrada</h2>
-                <h3 class="decodificador__mensagem__mensagem"> Digite um texto que você deseja criptrografar ou
-                    descriptografar.</h3>
+                <h3 class="decodificador__mensagem__mensagem">
+                    Digite um texto que você deseja criptrografar ou descriptografar.
+                </h3>
             </div>
-            <div class="decodificador__botao__copiar">
-                <button class="botao__copiar" id="botao-copiar" onclick="onClickCopiarBtn()">Copiar</button>
+            <div class="hide__div" id="text_result">
+                <p id="decoder"></p>
+                <div class="decodificador__botao__copiar">
+                    <button class="botao__copiar" id="botao-copiar" onclick="onClickCopiarBtn()">
+                        Copiar
+                    </button>
+                </div>
             </div>
         </section>
         <section class="decodificador__observacao">
             <img class="decodificador__observacao__imagem" src="./imagem/bi_exclamation-circle-fill.png"
-                alt="foto de um caracter exclamacao">
-            <p class="decodificador__observacao__paragrafo">Apenas letras minúsculas e sem acento.</p>
+                alt="foto de um caracter exclamacao" />
+            <p class="decodificador__observacao__paragrafo">
+                Apenas letras minúsculas e sem acento.
+            </p>
         </section>
         <section class="decodificador__botao">
-            <button class="botao" id="botao-criptografar" onclick="onClickEncriptBtn()">Criptografar</button>
-            <button class="botao" id="botao-descriptografar" onclick="onClickDescriptBtn()">Descriptografar</button>
+            <button class="botao" id="botao-criptografar" onclick="onClickEncriptBtn()">
+                Criptografar
+            </button>
+            <button class="botao" id="botao-descriptografar" onclick="onClickDescriptBtn()">
+                Descriptografar
+            </button>
         </section>
     </main>
 </body>
