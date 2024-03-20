@@ -40,25 +40,29 @@ function descriptografar(textoDescriptografar) {
 
 function onClickEncriptBtn() {
     const textoCriptografar = document.getElementById("decodificador__input");
+    const divShow = document.getElementById("text_vazio");
+    const divHide = document.getElementById("text_result");
+    const botaoClicadoCriptografar = document.getElementById("botao-copiar");
+    const pDecoder = document.getElementById("decoder");
 
-    if (textoCriptografar.value !== "") {
-        const divShow = document.getElementsByClassName("show__div")[0];
-        const divHide = document.getElementsByClassName("hide__div")[0];
-        const botaoClicadoCriptografar = document.getElementById("botao-copiar");
-        const pDecoder = document.getElementById("decoder");
-
-        divShow.classList.remove("show__div");
+    if (textoCriptografar.value === "") {
+        divShow.classList.add("show__div");
+        divHide.classList.add("hide__div");
+        divShow.classList.remove("hide__div");
+        divHide.classList.remove("show__div");
+    } else {
         divShow.classList.add("hide__div");
-
-        divHide.classList.remove("hide__div");
         divHide.classList.add("show__div");
+        divShow.classList.remove("show__div");
+        divHide.classList.remove("hide__div");
 
         botaoClicadoCriptografar.style.display = "block";
 
         const ret = criptografar(textoCriptografar.value);
-        const node = document.createTextNode(ret);
-        pDecoder.appendChild(node);
+        console.log(textoCriptografar.value)
+        pDecoder.innerText = ret;
     }
+
 }
 
 function onClickDescriptBtn() {

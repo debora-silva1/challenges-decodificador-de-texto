@@ -60,21 +60,6 @@ body {
 
 }
 
-.decodificador__caixa__texto__descriptografada {
-    position: relative;
-    background-color: rgb(141, 163, 191);
-    width: 400px;
-    height: 944px;
-    top: 40px;
-    left: 1000px;
-    border-radius: 32px;
-    display: flex;
-    justify-content: center;
-
-}
-
-#text_result {}
-
 .decodificador__texto__texto {
     width: 336px;
     height: 122px;
@@ -158,6 +143,19 @@ body {
 
 }
 
+.decodificador__caixa__texto__descriptografada {
+    position: relative;
+    background-color: rgb(141, 163, 191);
+    width: 400px;
+    height: 944px;
+    top: 40px;
+    left: 1000px;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+
+}
+
 .decodificador__botao {
     width: 680px;
     height: 67px;
@@ -229,21 +227,29 @@ body {
 
 @media only screen and (max-width: 768px) {
 
-    /* .decodificador__digitar__texto {
-        width: 100%;
-        left: 20px;
-    } */
+    .decodificador__input {
+        justify-content: center;
+    }
+
     .decodificador__texto .decodificador__paragrafo {
         display: none;
     }
 
+    .decodificador__botao {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+
+    }
+
     .decodificador__caixa__texto__descriptografada {
-        width: 688px;
-        left: 20px;
+        width: 100%;
+        margin: 0 auto;
         top: 1001px;
         display: flex;
         position: relative;
-        left: 40px;
+        justify-content: center;
+        left: 250px;
         height: 343px;
         background-color: white;
 
@@ -251,6 +257,11 @@ body {
 
     .imagem {
         display: none;
+    }
+
+    .botao__copiar {
+        width: 624px;
+        height: 67px;
     }
 }
 
@@ -263,5 +274,9 @@ body {
     textarea {
         width: 100%;
         height: 300px;
+    }
+
+    .imagem {
+        display: none;
     }
 }
